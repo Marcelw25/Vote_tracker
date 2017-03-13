@@ -24,32 +24,30 @@ function showImages(){
     console.log("Survey is over!")
     alert("Thanks for participating in this short survey!")
   }else{
-
-    var container = document.getElementById("images-container");
-    container.innerHTML = "";
-
+    var container =document.getElementById("images-container");
+    container.innerHTML= "";
     var imageOne = document.createElement('img');
     var randomIndex1 = Math.floor(Math.random() * photo.length);
-    var image1Name = photo[randomIndex1];
-    imageOne.src = "images/"+image1Name;
+    var imageName1 = photo[randomIndex1];
+    imageOne.src = "images/"+imageName1;
     container.appendChild(imageOne);
     photo.splice(randomIndex1, 1);
 
     var imageTwo = document.createElement('img');
     var randomIndex2 = Math.floor(Math.random() * photo.length);
-    var image2Name = photo[randomIndex2];
-    imageTwo.src = "images/"+image2Name;
+    var imageName2 = photo[randomIndex2];
+    imageTwo.src = "images/"+imageName2;
     container.appendChild(imageTwo);
     photo.splice(randomIndex2, 1);
 
     var image3 = document.createElement('img');
     var randomIndex3 = Math.floor(Math.random() * photo.length);
-    var image3Name = photo[randomIndex3];
-    image3.src = "images/"+image3Name;
+    var imageName3 = photo[randomIndex3];
+    image3.src = "images/"+imageName3;
     container.appendChild(image3);
-    photo.push(image1Name);
-    photo.push(image2Name);
-    photo.push(image3Name);
+    photo.push(imageName1);
+    photo.push(imageName2);
+    photo.push(imageName3);
   };
 }
 function getNewImages(){
@@ -57,5 +55,6 @@ function getNewImages(){
   showImages();
   makeImagesClickable();
 }
+
 window.addEventListener("load", showImages);
 window.addEventListener("load", makeImagesClickable);
