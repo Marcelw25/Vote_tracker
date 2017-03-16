@@ -92,7 +92,7 @@ function chart() {
 		{
 			// Change type to "doughnut", "line", "splineArea", etc.
 			type: "column",
-			dataPoints: products
+      dataPoints: products
 		}
 		]
 	});
