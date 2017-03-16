@@ -3,11 +3,13 @@ h1{
   text-align: center;
   background-color: red;
   color: white;
+  font-size: 45px;
 }
 h2{
   font-family: cursive;
   background-color: grey;
   color: white;
+  font-size: 40px;
 }
 #images-container{
   display:flex;
@@ -16,6 +18,11 @@ h2{
 img{
   height: 400px;
   width:200px;
+}
+
+hr{
+  background-color: grey;
+  height: 15px;
 }
 
 #busmall{
@@ -32,17 +39,7 @@ footer{
   color:white;
   text-align:center;
 }
-#myProgress {
-  width: 100%;
-  background-color: grey;
-}
-#myBar {
-  width: 15%;
-  height: 30px;
-  background-color: red;
-  text-align: center;
-  color: white
-}
+
 button{
   background-color:red;
   border: none;
