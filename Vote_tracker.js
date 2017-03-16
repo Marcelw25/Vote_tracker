@@ -91,8 +91,8 @@ function chart() {
 		data: [
 		{
 			// Change type to "doughnut", "line", "splineArea", etc.
-			type: "pie",
-			dataPoints: products
+			type: "column",
+      dataPoints: products
 		}
 		]
 	});
